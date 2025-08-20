@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-
 export default function Layout({ Component }: { Component: any }) {
   return (
     <div class="min-h-screen bg-black text-green-400 font-mono crt flicker">

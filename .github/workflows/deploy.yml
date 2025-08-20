@@ -23,9 +23,6 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Generate Fresh Manifest
-        run: deno run -A https://deno.land/x/fresh@1.7.3/cli.ts build
-
       - name: Build step
         run: "deno task build"
 
