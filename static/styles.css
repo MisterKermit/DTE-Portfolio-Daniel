@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Retro CRT Effects */
+
+body {
+  background-color: black;
+  color: #39ff14; /* neon green */
+  font-family: "Press Start 2P", monospace; /* optional pixel font */
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+}
+
+/* Scanlines overlay */
+.crt::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* Slight flicker animation */
+@keyframes flicker {
+  0% { opacity: 1; }
+  45% { opacity: 0.98; }
+  46% { opacity: 0.85; }
+  47% { opacity: 1; }
+  100% { opacity: 1; }
+}
+.flicker {
+  animation: flicker 3s infinite;
+}
