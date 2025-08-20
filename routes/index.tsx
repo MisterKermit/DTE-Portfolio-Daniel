@@ -1,12 +1,42 @@
 export default function Home() {
     return (
-        <body class="bg-cyan-500">
-            <div class="mt-10 px-10 rounded bg-white mx-auto flex max-w-screen-md flex-col justify-center">
-                <div class="mx-auto">
-                    <p class="font-serif text-4xl dark:text-white text-center">Daniel's Portfolio</p>
-                    
+        <div className="min-h-screen bg-gradient-to-br from-cyan-500 to-blue-700 flex items-center justify-center">
+            <div className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg p-8 max-w-md w-full">
+                <div className="flex flex-col items-center">
+                    <img
+                        src="/logo.svg"
+                        alt="Daniel's Logo"
+                        className="w-20 h-20 mb-4 rounded-full border-2 border-cyan-500 shadow"
+                    />
+                    <h1 className="text-3xl font-bold text-gray-800 mb-2 text-center">
+                        Daniel's Portfolio
+                    </h1>
+                    <p className="text-gray-600 text-center mb-6">
+                        Computer Science Student &amp; Developer
+                    </p>
+                    <div className="flex gap-4">
+                        <a
+                            href="https://github.com/MisterKermit"
+                            target="_blank"
+                            className="text-cyan-600 hover:text-cyan-800 transition"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            href="mailto:dlin26@punahou.edu"
+                            className="text-cyan-600 hover:text-cyan-800 transition"
+                        >
+                            Email
+                        </a>
+                        <a
+                            href="/resume.pdf"
+                            className="text-cyan-600 hover:text-cyan-800 transition"
+                        >
+                            Resume
+                        </a>
+                    </div>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }
