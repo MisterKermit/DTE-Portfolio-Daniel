@@ -10,6 +10,38 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "pygame-launcher",
+    title: "🎮 Pygame Launcher Game",
+    desc:
+      "A physics-based launcher game built with Pygame Zero. Features bullet mechanics, target collisions, a timer, and high score tracking.",
+    longDesc:
+      "A physics-based launcher game built with Pygame Zero, inspired by classic arcade shooters. The development followed the engineering design process: defining the core gameplay goals, researching projectile physics, brainstorming control schemes, prototyping mechanics, testing collisions and timing, and refining based on playtesting feedback.",
+    features: [
+      "Custom bullet physics and projectile motion",
+      "Hit detection with multiple target types",
+      "Scoreboard and timer-driven challenge mode",
+      "Retro-style visual polish and responsive controls",
+    ],
+    tech: ["Python", "Pygame Zero"],
+    images: [],
+  },
+  {
+    slug: "pgzero-infection-simulator",
+    title: "🧬 PGZero Infection Simulator",
+    desc:
+      "A simulation of infection spread with clumping behavior. Only directly touching cells can transmit infection, with dynamic grouping.",
+    longDesc:
+      "An infection spread simulation built with Pygame Zero that models agent interactions and emergent clustering. The process mirrored engineering design: identifying the simulation objective, researching contagion models, ideating transmission rules, prototyping agent behavior, testing interactions, and iterating on visuals and performance.",
+    features: [
+      "Cellular infection model with proximity-based transmission",
+      "Visual clump detection and group behavior",
+      "Real-time simulation controls and state tracking",
+      "Interactive display of infection spread over time",
+    ],
+    tech: ["Python", "Pygame Zero"],
+    images: [],
+  },
+  {
     slug: "retro-portfolio",
     title: "🌐 Retro Portfolio",
     desc:
@@ -119,38 +151,6 @@ export const projects: Project[] = [
       "User-tested interaction design",
     ],
     tech: ["WebSockets", "Canvas API", "React", "Real-time Collaboration"],
-    images: [],
-  },
-  {
-    slug: "transformer-shakespearean-text",
-    title: "📝 Shakespearean Text Generator",
-    desc:
-      "A transformer-based large language model trained to generate authentic Shakespearean-style text, capturing the poetic rhythm and archaic language of the Bard.",
-    longDesc:
-      "A deep learning project implementing a transformer architecture to generate Shakespearean text. The model was trained on a comprehensive corpus of Shakespeare's works, utilizing attention mechanisms to understand context and generate coherent, period-appropriate language. The engineering design process involved data preprocessing, model architecture selection, training optimization, and evaluation of generated text quality.",
-    features: [
-      "Transformer architecture with multi-head attention",
-      "Fine-tuned on Shakespeare corpus for stylistic accuracy",
-      "Interactive text generation with customizable prompts",
-      "Evaluation metrics for linguistic authenticity",
-    ],
-    tech: ["Python", "PyTorch", "Transformers", "NLP"],
-    images: [],
-  },
-  {
-    slug: "cnn-traffic-detection",
-    title: "🚗 Traffic Detection CNN",
-    desc:
-      "A convolutional neural network designed to detect and classify cars and pedestrians in urban foot traffic scenarios for enhanced safety and traffic management.",
-    longDesc:
-      "A computer vision project using convolutional neural networks for real-time object detection in traffic environments. The model was trained on diverse datasets of urban scenes to accurately identify and classify vehicles and pedestrians. Following engineering design principles, the project involved dataset curation, model architecture design, training optimization, and performance evaluation in various lighting and weather conditions.",
-    features: [
-      "Real-time object detection and classification",
-      "Robust performance across varying environmental conditions",
-      "Integration with camera feeds for live monitoring",
-      "High accuracy in pedestrian and vehicle identification",
-    ],
-    tech: ["Python", "TensorFlow", "OpenCV", "Computer Vision"],
     images: [],
   },
 ];

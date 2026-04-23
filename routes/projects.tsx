@@ -16,7 +16,8 @@ export default function Projects() {
       tech: ["Deno Fresh", "Tailwind CSS"],
     },
   ];
-  
+
+export default function Projects() {
   return (
     <section>
       <h1 class="text-3xl mb-6 text-green-400">Projects 🚀</h1>
