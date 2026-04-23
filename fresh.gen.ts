@@ -5,11 +5,14 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $blog from "./routes/blog.tsx";
+import * as $conservation from "./routes/conservation.tsx";
 import * as $contact from "./routes/contact.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $projects from "./routes/projects.tsx";
 import * as $projects_slug_ from "./routes/projects/[slug].tsx";
 import * as $projects_data from "./routes/projects_data.ts";
+import * as $robotics from "./routes/robotics.tsx";
+import * as $wheelchair from "./routes/wheelchair.tsx";
 
 import type { Manifest } from "$fresh/server.ts";
 
@@ -18,11 +21,14 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/_layout.tsx": $_layout,
     "./routes/blog.tsx": $blog,
+    "./routes/conservation.tsx": $conservation,
     "./routes/contact.tsx": $contact,
     "./routes/index.tsx": $index,
     "./routes/projects.tsx": $projects,
     "./routes/projects/[slug].tsx": $projects_slug_,
     "./routes/projects_data.ts": $projects_data,
+    "./routes/robotics.tsx": $robotics,
+    "./routes/wheelchair.tsx": $wheelchair,
   },
   islands: {},
   baseUrl: import.meta.url,

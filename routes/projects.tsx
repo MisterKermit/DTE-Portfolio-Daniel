@@ -1,22 +1,6 @@
+import { projects } from "./projects_data.ts";
+
 export default function Projects() {
-  const projects = [
-    {
-      title: "🎮 Pygame Launcher Game",
-      desc: "A physics-based launcher game built with Pygame Zero. Features bullet mechanics, target collisions, a timer, and high score tracking.",
-      tech: ["Python", "Pygame Zero"],
-    },
-    {
-      title: "🧬 PGZero Infection Simulator",
-      desc: "A simulation of infection spread with clumping behavior. Only directly touching cells can transmit infection, with dynamic grouping.",
-      tech: ["Python", "Pygame Zero"],
-    },
-    {
-      title: "🌐 Retro Portfolio",
-      desc: "This very site! Built with Deno Fresh and Tailwind, styled with a sleek retro CRT aesthetic.",
-      tech: ["Deno Fresh", "Tailwind CSS"],
-    },
-  ];
-  
   return (
     <section>
       <h1 class="text-3xl mb-6 text-green-400">Projects 🚀</h1>

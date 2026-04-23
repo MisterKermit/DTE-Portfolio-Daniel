@@ -26,38 +26,6 @@ export const projects: Project[] = [
     images: [],
   },
   {
-    slug: "ftc-frc-robotics",
-    title: "🤖 FTC/FRC Robotics",
-    desc:
-      "A competitive robotics program spanning FTC and FRC. Includes design, fabrication, control systems, and iterative testing on the field.",
-    longDesc:
-      "A robotics engineering project covering both FTC and FRC seasons. The development process reflected the engineering design cycle: identifying game challenges, researching mechanisms and materials, brainstorming drive trains and manipulators, building prototypes, testing on the field, analyzing performance, and refining the robot for consistent competition results.",
-    features: [
-      "Mechanical design for drivetrain and manipulators",
-      "Control system integration with sensors and motors",
-      "Iterative prototyping, testing, and tuning",
-      "Team collaboration and game strategy development",
-    ],
-    tech: ["CAD", "C++", "Java", "Motor Controllers", "Sensors"],
-    images: [],
-  },
-  {
-    slug: "ke-kilohana-conservation",
-    title: "🌿 Ke Kilohana Conservation Project",
-    desc:
-      "A conservation initiative to support native habitat restoration. Includes data collection, community outreach, and environmental impact tracking.",
-    longDesc:
-      "A conservation project centered on restoring native ecosystems. The engineering design process guided the work: defining ecological goals, researching native species and threats, generating restoration strategies, prototyping planting and monitoring systems, testing with field data, and refining the approach based on environmental feedback and community input.",
-    features: [
-      "Habitat assessment and restoration planning",
-      "Data-driven environmental monitoring",
-      "Community engagement and volunteer coordination",
-      "Iterative evaluation of conservation outcomes",
-    ],
-    tech: ["GIS", "Data Analysis", "Field Research", "Community Outreach"],
-    images: [],
-  },
-  {
     slug: "enehana-carnival-app",
     title: "🎡 Enehana Carnival App",
     desc:
@@ -71,22 +39,6 @@ export const projects: Project[] = [
       "Feedback-driven UI improvements",
     ],
     tech: ["React", "TypeScript", "Firebase", "UI/UX Design"],
-    images: [],
-  },
-  {
-    slug: "motorized-wheelchair-trainer",
-    title: "🦽 Motorized Wheelchair Trainer",
-    desc:
-      "A training tool for motorized wheelchair operation. Focused on safety, control practice, and adaptive user interaction.",
-    longDesc:
-      "A training system designed to teach safe motorized wheelchair operation. The engineering process involved defining user needs, researching accessibility and control interfaces, ideating training scenarios, prototyping the simulator, testing with users, and iterating the design to improve comfort, safety, and learning outcomes.",
-    features: [
-      "Safety-focused control training exercises",
-      "Adaptive interface for different skill levels",
-      "Realistic simulation of motorized wheelchair behavior",
-      "Iterative testing with target users",
-    ],
-    tech: ["Embedded Systems", "Simulation", "Accessibility Design"],
     images: [],
   },
   {
@@ -151,6 +103,23 @@ export const projects: Project[] = [
       "High accuracy in pedestrian and vehicle identification",
     ],
     tech: ["Python", "TensorFlow", "OpenCV", "Computer Vision"],
+    images: [],
+  },
+  {
+    slug: "cayden-ai",
+    title: "🤖 Cayden.ai",
+    desc:
+      "A Discord chatbot trained to imitate a friend's personality and communication style. Uses machine learning to learn from conversation patterns and generate contextually appropriate responses.",
+    longDesc:
+      "A Discord bot project that captures and replicates a friend's unique personality and speaking patterns through machine learning. The engineering design process involved analyzing conversation data, training a language model on interaction patterns, developing a Discord integration layer, and iteratively refining responses to improve authenticity and humor while maintaining ethical guidelines.",
+    features: [
+      "Natural language processing for personality emulation",
+      "Discord API integration for seamless chat participation",
+      "Machine learning model trained on conversation patterns",
+      "Contextual response generation with custom personality traits",
+      "Administrative controls for moderation and customization",
+    ],
+    tech: ["Python", "Discord.py", "Machine Learning", "NLP"],
     images: [],
   },
 ];
