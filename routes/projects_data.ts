@@ -1,3 +1,10 @@
+export interface MediaItem {
+  type: "image" | "video";
+  src: string;
+  poster?: string; // for videos
+  alt?: string;
+}
+
 export interface Project {
   slug: string;
   title: string;
@@ -5,25 +12,21 @@ export interface Project {
   longDesc: string;
   features: string[];
   tech: string[];
-  images?: string[];
+  media?: MediaItem[];
 }
 
 export const projects: Project[] = [
   {
     slug: "retro-portfolio",
     title: "🌐 Retro Portfolio",
-    desc:
-      "This very site! Built with Deno Fresh and Tailwind, styled with a sleek retro CRT aesthetic.",
-    longDesc:
-      "A retro-inspired portfolio site built using Deno Fresh and Tailwind CSS. The project followed the engineering design process by defining audience and aesthetic goals, researching retro UI patterns, ideating layout and navigation, prototyping the structure, testing responsiveness, and refining content for clarity and visual impact.",
+    desc: "This very site! Built with Deno Fresh and Tailwind...",
+    longDesc: "...",
     features: [
-      "Deno Fresh routing and SSR rendering",
-      "Tailwind CSS retro design system",
-      "Responsive layout with custom animations",
-      "Project pages and modular content sections",
+      "Deno Fresh for server-side rendering",
+      "Tailwind CSS for styling",
     ],
     tech: ["Deno Fresh", "Tailwind CSS"],
-    images: [],
+    media: [],
   },
   {
     slug: "enehana-carnival-app",
@@ -39,7 +42,7 @@ export const projects: Project[] = [
       "Feedback-driven UI improvements",
     ],
     tech: ["React", "TypeScript", "Firebase", "UI/UX Design"],
-    images: [],
+    media: [],
   },
   {
     slug: "conways-game-of-life",
@@ -55,7 +58,7 @@ export const projects: Project[] = [
       "Visual feedback for emerging behaviors",
     ],
     tech: ["JavaScript", "HTML", "CSS", "Simulation"],
-    images: [],
+    media: [],
   },
   {
     slug: "online-canvas",
@@ -71,7 +74,7 @@ export const projects: Project[] = [
       "User-tested interaction design",
     ],
     tech: ["WebSockets", "Canvas API", "React", "Real-time Collaboration"],
-    images: [],
+    media: [],
   },
   {
     slug: "transformer-shakespearean-text",
@@ -87,7 +90,7 @@ export const projects: Project[] = [
       "Evaluation metrics for linguistic authenticity",
     ],
     tech: ["Python", "PyTorch", "Transformers", "NLP"],
-    images: [],
+    media: [],
   },
   {
     slug: "cnn-traffic-detection",
@@ -103,7 +106,18 @@ export const projects: Project[] = [
       "High accuracy in pedestrian and vehicle identification",
     ],
     tech: ["Python", "TensorFlow", "OpenCV", "Computer Vision"],
-    images: [],
+    media: [
+      {
+        type: "image",
+        src: "/images/detection/detect.png",
+        poster: "/images/detection/detect.png",
+      },
+      {
+        type: "video",
+        src: "/videos/detection/video2.mp4",
+        poster: "/images/traffic-detection-poster.png",
+      },
+    ],
   },
   {
     slug: "cayden-ai",
@@ -120,6 +134,6 @@ export const projects: Project[] = [
       "Administrative controls for moderation and customization",
     ],
     tech: ["Python", "Discord.py", "Machine Learning", "NLP"],
-    images: [],
+    media: [],
   },
 ];

@@ -7,12 +7,22 @@ export default function Layout({ Component }: { Component: any }) {
       {/* Navbar */}
       <nav class="flex justify-center gap-8 py-6 text-xl relative z-10">
         <a href="/" class="hover:text-pink-400 transition-colors">About Me</a>
-        <a href="/robotics" class="hover:text-pink-400 transition-colors">Robotics</a>
-        <a href="/wheelchair" class="hover:text-pink-400 transition-colors">Wheelchair</a>
-        <a href="/conservation" class="hover:text-pink-400 transition-colors">Conservation</a>
-        <a href="/projects" class="hover:text-pink-400 transition-colors">Projects</a>
+        <a href="/robotics" class="hover:text-pink-400 transition-colors">
+          Robotics
+        </a>
+        <a href="/ATC" class="hover:text-pink-400 transition-colors">
+          ATC
+        </a>
+        <a href="/kekilohana" class="hover:text-pink-400 transition-colors">
+          Ke Kilohana
+        </a>
+        <a href="/projects" class="hover:text-pink-400 transition-colors">
+          Projects
+        </a>
         <a href="/blog" class="hover:text-pink-400 transition-colors">Blog</a>
-        <a href="/contact" class="hover:text-pink-400 transition-colors">Contact</a>
+        <a href="/contact" class="hover:text-pink-400 transition-colors">
+          Contact
+        </a>
       </nav>
 
       {/* Content */}

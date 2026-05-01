@@ -1,12 +1,13 @@
 import { Head } from "$fresh/runtime.ts";
+
 import ImageModal from "../islands/ImageModal.tsx";
 import VideoModal from "../islands/VideoModal.tsx";
 
-export default function RoboticsPage() {
+export default function kekilohana() {
   return (
     <>
       <Head>
-        <title>FTC/FRC Robotics | Daniel's Portfolio</title>
+        <title>Ke Kilohana Conservation | Daniel's Portfolio</title>
       </Head>
       <section class="space-y-8 px-6 py-10">
         <a
@@ -17,7 +18,9 @@ export default function RoboticsPage() {
         </a>
 
         <div class="rounded-3xl border border-green-800 bg-black/70 p-8 shadow-[0_0_30px_#ec4899]">
-          <h1 class="text-4xl mb-4 text-green-400">🤖 FTC/FRC Robotics</h1>
+          <h1 class="text-4xl mb-4 text-green-400">
+            🌿 Ke Kilohana: Taro Growth Animation
+          </h1>
 
           <div class="grid md:grid-cols-2 gap-8 mb-8">
             <div class="space-y-4">
@@ -31,9 +34,10 @@ export default function RoboticsPage() {
                     1. Define the Problem
                   </h3>
                   <p class="text-slate-100">
-                    Identified the competitive robotics challenge: build robots
-                    that can autonomously and manually complete complex game
-                    objectives within strict time limits and rules.
+                    Identified the educational challenge: create engaging visual
+                    content to raise awareness about native Hawaiian plants,
+                    particularly Taro (kalo), and its cultural and ecological
+                    significance to island communities.
                   </p>
                 </div>
 
@@ -42,9 +46,11 @@ export default function RoboticsPage() {
                     2. Research & Gather Information
                   </h3>
                   <p class="text-slate-100">
-                    Studied game manuals, analyzed successful robot designs from
-                    previous seasons, researched mechanical components, sensors,
-                    and control systems available for FTC and FRC competitions.
+                    Researched Taro botany and growth stages, studied
+                    traditional Hawaiian cultivation practices, documented
+                    visual characteristics at each life cycle phase, and
+                    researched 3D animation techniques and plant modeling
+                    methodologies.
                   </p>
                 </div>
 
@@ -53,10 +59,11 @@ export default function RoboticsPage() {
                     3. Brainstorm Solutions
                   </h3>
                   <p class="text-slate-100">
-                    Generated multiple robot configurations including different
-                    drive trains (tank, mecanum, swerve), manipulator designs,
-                    and autonomous programming strategies for various game
-                    challenges.
+                    Conceptualized interactive 3D animation showing Taro from
+                    seed germination through mature plant development,
+                    incorporating traditional Hawaiian knowledge alongside
+                    botanical accuracy, and designed educational narratives
+                    highlighting cultural significance.
                   </p>
                 </div>
 
@@ -65,9 +72,11 @@ export default function RoboticsPage() {
                     4. Prototype & Build
                   </h3>
                   <p class="text-slate-100">
-                    Constructed initial robot prototypes using CAD software for
-                    design visualization, then fabricated physical models with
-                    3D printed and machined components, motors, and sensors.
+                    Modeled 3D Taro plant geometry using botanical reference
+                    photos and measurements, created growth animation sequences
+                    across seven distinct life stages, developed interactive UI
+                    for educational presentations, and integrated narration
+                    explaining each growth phase.
                   </p>
                 </div>
 
@@ -76,10 +85,11 @@ export default function RoboticsPage() {
                     5. Test & Evaluate
                   </h3>
                   <p class="text-slate-100">
-                    Conducted iterative testing on practice fields, measuring
-                    performance metrics like speed, accuracy, reliability, and
-                    scoring efficiency during both autonomous and
-                    driver-controlled periods.
+                    Tested animation accuracy against real Taro specimens,
+                    gathered feedback from Hawaiian cultural experts and
+                    educators, evaluated engagement with student audiences, and
+                    measured learning retention through post-presentation
+                    assessments.
                   </p>
                 </div>
 
@@ -88,9 +98,11 @@ export default function RoboticsPage() {
                     6. Refine & Improve
                   </h3>
                   <p class="text-slate-100">
-                    Analyzed test data to identify weaknesses, then iterated on
-                    designs with improved mechanisms, better sensor integration,
-                    optimized programming, and enhanced driver training.
+                    Enhanced animation realism based on expert feedback, refined
+                    growth transitions for smoother visual progression, added
+                    interactive elements allowing users to explore specific
+                    growth stages, and created multilingual versions for broader
+                    community accessibility.
                   </p>
                 </div>
               </div>
@@ -98,66 +110,61 @@ export default function RoboticsPage() {
 
             <div class="space-y-6">
               <h2 class="text-2xl text-pink-400 mb-4">
-                Technical Implementation
+                Conservation Implementation
               </h2>
 
               <div class="space-y-4">
                 <div>
                   <h3 class="text-lg font-semibold text-green-300 mb-2">
-                    Mechanical Design
+                    3D Animation Development
                   </h3>
                   <ul class="text-slate-100 space-y-1">
                     <li>
-                      • CAD modeling for drivetrain and manipulator systems
+                      • Botanical modeling and texture creation for accurate
+                      Taro representation
                     </li>
-                    <li>• Precision fabrication using CNC and 3D printing</li>
                     <li>
-                      • Weight optimization and structural integrity analysis
+                      • Multi-stage growth animation with 7 distinct life cycle
+                      phases
+                    </li>
+                    <li>
+                      • Environmental context showing soil, water, and seasonal
+                      changes
                     </li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 class="text-lg font-semibold text-green-300 mb-2">
-                    Control Systems
+                    Educational Content
                   </h3>
                   <ul class="text-slate-100 space-y-1">
+                    <li>• Narrated explanations of each growth stage</li>
                     <li>
-                      • Sensor integration (encoders, IMU, vision systems)
+                      • Integration of traditional Hawaiian cultivation
+                      practices
                     </li>
-                    <li>• PID control algorithms for precise movement</li>
-                    <li>• Real-time telemetry and diagnostics</li>
+                    <li>
+                      • Interactive exploration features for student engagement
+                    </li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 class="text-lg font-semibold text-green-300 mb-2">
-                    FRC Programming
+                    Community Impact
                   </h3>
                   <ul class="text-slate-100 space-y-1">
                     <li>
-                      • <strong>Limelight AprilTag Vision Tracking:</strong>
-                      {" "}
-                      Integrated Limelight camera system with AprilTag detection
-                      for autonomous alignment and precise targeting of game
-                      elements
+                      • Presentations to Hawaiian cultural organizations and
+                      schools
                     </li>
                     <li>
-                      • <strong>Swerve Drive with YAGSL:</strong>{" "}
-                      Implemented advanced swerve drive kinematics using the Yet
-                      Another Gyro Swerve Library (YAGSL) for omni-directional
-                      robot control and rotation
+                      • Increased awareness of native plant significance on
+                      island
                     </li>
                     <li>
-                      • <strong>Command-Based Architecture:</strong>{" "}
-                      Built robot software using WPILib's command-based
-                      paradigm, organizing subsystems, commands, and
-                      trigger-based autonomous routines
-                    </li>
-                    <li>
-                      • <strong>Autonomous Sequences:</strong>{" "}
-                      Programmed complex autonomous paths using PathPlanner for
-                      smooth trajectories and integrated vision-based feedback
+                      • Digital resource for cultural education and preservation
                     </li>
                   </ul>
                 </div>
@@ -165,12 +172,16 @@ export default function RoboticsPage() {
 
               <div class="mt-6">
                 <h3 class="text-lg font-semibold text-green-300 mb-2">
-                  Competition Results
+                  Educational Impact
                 </h3>
                 <p class="text-slate-100">
-                  Successfully competed in multiple FTC and FRC regional
-                  tournaments, achieving consistent top rankings through
-                  systematic design iteration and team collaboration.
+                  Presented 3D Taro animation in class, and pending presentation
+                  with Chef Gouch through Mr. Richardi. Compiled animation into
+                  a presentation-esque website in order to educate students on
+                  the growth of Taro, and the importance of Taro in Hawaiian
+                  culture. The presentation was well-received by our classmates,
+                  and sparked interest in learning more about native Hawaiian
+                  plants and their cultural significance.
                 </p>
               </div>
             </div>
@@ -181,27 +192,17 @@ export default function RoboticsPage() {
             <h2 class="text-2xl text-pink-400 mb-4">Photo Gallery</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <ImageModal
-                src="/images/Robotics/clawRotate.png"
+                src="/images/kk/face.png"
+                alt="OpenCV detection"
+              />
+
+              <ImageModal
+                src="/images/kk/thing.png"
                 alt="OpenCV detection"
               />
 
               <VideoModal
-                src="/videos/Robotics/rebuilt1.MOV"
-                poster="/images/Robotics/video-thumbnail.jpg"
-              />
-
-              <VideoModal
-                src="/videos/Robotics/rebuilt2.MOV"
-                poster="/images/Robotics/video-thumbnail.jpg"
-              />
-
-              <VideoModal
-                src="/videos/Robotics/rebuilt3.MOV"
-                poster="/images/Robotics/video-thumbnail.jpg"
-              />
-
-              <VideoModal
-                src="/videos/Robotics/rebuilt4.MOV"
+                src="/videos/kk/presentation.mov"
                 poster="/images/Robotics/video-thumbnail.jpg"
               />
             </div>
